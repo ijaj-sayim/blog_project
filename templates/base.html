@@ -25,16 +25,20 @@
             <a class="nav-link" href="{% url 'index' %}">Home</a>
           </li>
           <li class="navbar-item">
-            <a class="nav-link" href="#">Add Musician</a>
+            <a class="nav-link" href=" {% url 'app_login:signup' %} ">Sign Up</a>
           </li>
           <li class="navbar-item">
-            <a class="nav-link" href="#}">Add Album</a>
+            <a class="nav-link" href="#}"></a>
           </li>
         </ul>
       </nav>  
 
-      {%block body_block%}
-      {%endblock body_block%}
+<div class="container" style="padding-top:20px">
+    {%block body_block%}
+    {%endblock body_block%}
+</div>
+
+      
     
 </body>
 </html>
