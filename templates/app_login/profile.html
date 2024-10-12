@@ -13,6 +13,9 @@ Profile
 <p>Username: {{user.username}}</p>
 <p>Email: {{user.email}}</p>
 <p>Name: {{user.first_name}} {{user.last_name}}</p>
+
+<br>
+<a href="{% url 'app_login:user_change'%}" class="btn btn-warning btn-sm">Change Profile Info</a>
     
 {% endblock body_block %}
     
